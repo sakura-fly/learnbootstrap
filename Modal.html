@@ -8,6 +8,42 @@
     <script src="bootstrap.min.js"></script>
 </head>
 <body>
+
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        启动
+    </button>
+
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-exmapel-modal-sm" aria-hidden="true">
+        启动大modal
+    </button>
+    <div class="modal fade bs-exmapel-modal-sm" tabindex="-1" role="dialog" aria-labelledby="MyLargeModal" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                我好大
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-exmapel-modal-lg" aria-hidden="true">
+        启动大modal
+    </button>
+    <div class="modal fade bs-exmapel-modal-lg" tabindex="-1" role="dialog" aria-labelledby="MyLargeModal" >
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                我好大
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLable" aria-hidden="true" >
         <div class="modal-dialog">
             <div class="modal-content">
@@ -31,5 +67,5 @@
 </body>
 </html>
 <script>
-    $("#myModal").modal('show');
+//    $("#myModal").modal('show');
 </script>
